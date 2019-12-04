@@ -1,0 +1,124 @@
+body {
+    background-image: url("pics/body.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.77);
+    font-family: "Gill Sans MT";
+}
+h2 {
+    text-align: center;
+    color: rgba(254, 231, 255, 0.85);
+}
+
+.deco {
+    display: inline-block;
+    text-align: center;
+}
+
+#tap_letter {
+    width: 80px;
+    font-size: 60pt;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.44);
+    border: #292929 3px solid;
+    color: white;
+    font-family: "Agency FB";
+}
+
+span {
+    border: 1px black dashed;
+    font-size: 40pt;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: rgba(0, 0, 0, 0.44);
+    color: white;
+    text-transform: uppercase;
+}
+
+#leon {
+    float: right;
+}
+
+#zombies {
+    position: absolute;
+    left: 0;
+}
+
+#pic {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#difficulties {
+    text-align: center;
+    color: white;
+    font-family: "Agency FB";
+    font-size: 30pt;
+}
+
+.col-sm {
+    border: white 2px solid;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#easy {
+    background-image: url("pics/easy.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.60;
+    filter: grayscale(1);
+}
+#medium {
+    background-image: url("pics/medium.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.60;
+    filter: grayscale(1);
+}
+#hard {
+    background-image: url("pics/hard.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.60;
+    filter: grayscale(1);
+}
+#survivor {
+    background-image: url("pics/survivor.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.60;
+    filter: grayscale(1);
+}
+#easy:hover {
+    cursor: pointer;
+    opacity: 1;
+    filter: none;
+}
+#medium:hover {
+    cursor: pointer;
+    opacity: 1;
+    filter: none;
+}
+#hard:hover {
+    cursor: pointer;
+    opacity: 1;
+    filter: none;
+}
+#survivor:hover {
+    cursor: pointer;
+    opacity: 1;
+    filter: none;
+}
+
+#classement {
+    text-align: center;
+    font-size: 30pt;
+    font-family: "Courier New";
+    font-weight: bold;
+    color: white;
+    margin-top: 30px;
+}

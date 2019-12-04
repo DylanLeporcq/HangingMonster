@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Raccoon City Escape</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body id="body">
+<div id="all" style="display: block">
+    <h1 style="font-size: 38pt">Escape from zombies, guess the password to leave Raccoon City</h1>
+    <h2 id="consigne">Choose a game mode to begin game !</h2>
+
+    <div id="interface" class="container-fluid" style="text-align: center; margin-bottom: 60px; display: none">
+        <div class="row">
+            <div id="pic" class="col-md" style="border: 3px solid black">
+                <img id="zombies" height="120px" src="pics/3073876301_1_5_HqDJeFAV.png" alt="">
+                <img id="leon" height="120px" src="pics/leon-scott-kennedy-resident-evil-15-wiki-fandom-powered-by-wikia-leon-s-kennedy-png-478_1000.png">
+            </div>
+            <div class="col-md">
+                <input id="tap_letter" type="text" maxlength="1" required style="text-transform: uppercase; display: none" pattern="/[a-z]+/i"></div>
+            <div id="tapped" class="col-md" style="border: 3px solid black; background: rgba(0, 0, 0, 0.7); text-transform: uppercase; color: white; font-size: 25pt"></div>
+        </div>
+    </div>
+
+    <div style="text-align: center" id="guesses"></div>
+
+    <div id="enter" style="text-align: center; margin-top: 50px;cursor: pointer; display: none; border: 3px solid black; border-radius: 80px; color: white; font-family: 'Agency FB'; font-size: 20pt; background: rgba(0,0,0,0.33)" onclick="submitLetter()">Enter letter</div>
+    <div id="begin" style="text-align: center; margin-top: 50px; cursor: pointer; display: none; border: 3px solid black; border-radius: 80px; color: white; font-family: 'Agency FB'; font-size: 20pt; background: rgba(0,0,0,0.33)" onclick="beginGame()">Start</div>
+    <div id="refresh" style="text-align: center; margin-top: 50px; cursor: pointer; display: none; border: 3px solid black; border-radius: 80px; color: white; font-family: 'Agency FB'; font-size: 20pt; background: rgba(0,0,0,0.33)">Changer difficulté</div>
+    <div id="difficulties" style="display: block" class="container-fluid">
+        <div class="row">
+            <div class="col-sm" id="easy" onclick="easyMode()">EASY</div>
+            <div class="col-sm" id="medium" onclick="mediumMode()">MEDIUM</div>
+            <div class="col-sm" id="hard" onclick="hardMode()">HARD</div>
+            <div class="col-sm" id="survivor" onclick="survivorMode()">SURVIVOR</div>
+        </div>
+    </div>
+
+    <div id="test"></div>
+</div>
+
+<div style="display: none" id="classement">Congratulations !
+    <div style="margin-top: 100px">Ranking :<div id="rank_end"></div></div>
+    <div>Difficulty :<div id="dif_end"></div></div>
+    <div>Number of mistakes :<div id="mis_end"></div></div>
+</div>
+
+<div id="retry" style="text-align: center; margin-top: 50px; cursor: pointer; display: none; border: 3px solid black; border-radius: 80px; color: white; font-family: 'Agency FB'; font-size: 20pt; background: rgba(0,0,0,0.33)">Retry</div>
+
+
+<script src="words.js"></script>
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</body>
+</html>
